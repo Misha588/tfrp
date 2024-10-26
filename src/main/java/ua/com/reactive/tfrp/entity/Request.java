@@ -12,7 +12,7 @@ import java.time.LocalTime;
 
 public class Request {
     private Long id;
-    private Long tenant_id;
+    private Long user_id;
     private Long team_id;
     private String work_type;
     private String scale;

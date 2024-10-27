@@ -8,7 +8,7 @@ import ua.com.reactive.tfrp.entity.User;
 @RestController
 
 public class MyController {
-    @GetMapping("/users")
+    @GetMapping("/user")
 
     public Flux<User> getUsers() {
         Flux<User> users = Flux.just(

@@ -12,8 +12,6 @@ CREATE TABLE teams (
    name varchar(100)
 );
 
-CREATE TYPE status AS ENUM ('NEW', 'IN_PROGRESS', 'COMPLETED');
-
 CREATE TABLE requests (
     id bigint generated always as identity primary key not null,
     user_id bigint NOT NULL,
@@ -22,7 +20,7 @@ CREATE TABLE requests (
     scale varchar(100),
     desired_date date,
     desired_time time,
-    status status
+    status varchar(100)
 );
 
 ALTER TABLE requests
